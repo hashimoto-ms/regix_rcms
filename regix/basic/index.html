@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -19,7 +20,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="/files/user/regix/css/plan.min.css" type="text/css">
 
   <link rel="canonical" href="https://www.glory.co.jp/regix/basic/">
@@ -46,15 +47,17 @@
 
 
 <body>
-<!-- Google Tag Manager -->
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-W3LZ9K"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-W3LZ9K');</script>
-<!-- End Google Tag Manager -->
+  <!-- Google Tag Manager -->
+  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-W3LZ9K" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-W3LZ9K');</script>
+  <!-- End Google Tag Manager -->
   <header>
     <div class="header">
       <div class="header_left">
@@ -120,7 +123,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <source media="(min-width: 641px)" srcset="/files/user/regix/img/bg-plan-basic-pc.png">
           <source media="(max-width: 640px)" srcset="/files/user/regix/img/bg-plan-basic-sp.png">
           <img src="">
-      </picture>
+        </picture>
       </div>
       <div class="container">
         <div class="sec-plan-mv_inner">
@@ -336,21 +339,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <div class="cv-area container">
       <div class="cv-area_inner">
-        <a href="https://form.glory.co.jp/webapp/form/20383_zdeb_68/index.do" target="_blank"
-          class="cv-area_btn_01 btn-round_blue">お問い合わせ・<br class="sp">資料請求</a>
-        <a href="https://form.glory.co.jp/webapp/form/20383_zdeb_69/index.do" target="_blank"
-          class="cv-area_btn_02 btn-round_green"><span>ご利用には審査が必要です</span><strong>無料Web審査お申し込み</strong></a>
+        <a href="https://form.glory.co.jp/webapp/form/20383_zdeb_68/index.do" target="_blank" class="cv-area_btn_01 btn-round_blue">お問い合わせ・<br class="sp">資料請求</a>
+        <a href="https://form.glory.co.jp/webapp/form/20383_zdeb_69/index.do" target="_blank" class="cv-area_btn_02 btn-round_green"><span>ご利用には審査が必要です</span><strong>無料Web審査お申し込み</strong></a>
       </div>
     </div>
 
     <section class="sec-plan-case">
       <div class="sec-top-point_point_case js-fixed-bg" data-target-bg="bg-top-case">
         <h3 class="sec-top-point_point_case_ttl "><span>導入事例</span></h3>
-        <div class="sec-top-point_point_case_slide_wrap">
-          <div class="swiper-button-prev"> </div>
-          <div class="swiper-button-next"> </div>
-          <ul class="sec-top-point_point_case_slide swiper-wrapper">
-            <li class="sec-top-point_point_case_slide_item swiper-slide article-card_item">
+        <div class="sec-top-point_point_case_slide_wrap swiper">
+          <div class="sec-top-point_point_case_slide swiper-wrapper">
+            <div class="sec-top-point_point_case_slide_item swiper-slide article-card_item">
               <a href="/regix/case/uoyoshi_shoten/">
                 <img src="/files/user/regix/img/img-case-01.png" alt="魚よし商店様" class="sec-top-point_point_case_slide_img" loading="lazy" style="aspect-ratio: 741 / 390;">
                 <div class="sec-top-point_point_case_slide_txt article-card_txt">
@@ -367,8 +366,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   </p>
                 </div>
               </a>
-            </li>
-            <li class="sec-top-point_point_case_slide_item swiper-slide article-card_item">
+            </div>
+            <div class="sec-top-point_point_case_slide_item swiper-slide article-card_item">
               <a href="/regix/case/kitatoda_alps_hifuka/">
                 <img src="/files/user/regix/img/img-case-02.png" alt="北戸田アルプス皮フ科様" class="sec-top-point_point_case_slide_img" loading="lazy" style="aspect-ratio: 741 / 390;">
                 <div class="sec-top-point_point_case_slide_txt article-card_txt">
@@ -385,8 +384,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   </p>
                 </div>
               </a>
-            </li>
-            <li class="sec-top-point_point_case_slide_item swiper-slide article-card_item">
+            </div>
+            <div class="sec-top-point_point_case_slide_item swiper-slide article-card_item">
               <a href="/regix/case/cocotier_clinic/">
                 <img src="/files/user/regix/img/img-case-03.png" alt="ココティエクリニック皮フ科・歯科口腔外科 様" class="sec-top-point_point_case_slide_img" loading="lazy" style="aspect-ratio: 741 / 390;">
                 <div class="sec-top-point_point_case_slide_txt article-card_txt">
@@ -403,8 +402,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   </p>
                 </div>
               </a>
-            </li>
-            <li class="sec-top-point_point_case_slide_item swiper-slide article-card_item">
+            </div>
+            <div class="sec-top-point_point_case_slide_item swiper-slide article-card_item">
               <a href="/regix/case/usami_ganka/">
                 <img src="/files/user/regix/img/img-case-04.png" alt="医療法人社団宇佐美　宇佐美眼科様" class="sec-top-point_point_case_slide_img" loading="lazy" style="aspect-ratio: 741 / 390;">
                 <div class="sec-top-point_point_case_slide_txt article-card_txt">
@@ -421,8 +420,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   </p>
                 </div>
               </a>
-            </li>
-            <li class="sec-top-point_point_case_slide_item swiper-slide article-card_item">
+            </div>
+            <div class="sec-top-point_point_case_slide_item swiper-slide article-card_item">
               <a href="/regix/case/tanzan_jinja/">
                 <img src="/files/user/regix/img/img-case-05.png" alt="多武峰　談山神社様" class="sec-top-point_point_case_slide_img" loading="lazy" style="aspect-ratio: 741 / 390;">
                 <div class="sec-top-point_point_case_slide_txt article-card_txt">
@@ -439,98 +438,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   </p>
                 </div>
               </a>
-            </li>
-            <li class="sec-top-point_point_case_slide_item swiper-slide article-card_item">
-              <a href="/regix/case/uoyoshi_shoten/">
-                <img src="/files/user/regix/img/img-case-01.png" alt="魚よし商店様" class="sec-top-point_point_case_slide_img" loading="lazy" style="aspect-ratio: 741 / 390;">
-                <div class="sec-top-point_point_case_slide_txt article-card_txt">
-                  <div class="sec-top-point_point_case_slide_info article-card_info">
-                    <span class="sec-top-point_point_case_slide_date article-card_date">2024.8.27</span>
-                    <span class="sec-top-point_point_case_slide_location article-card_location">東京都</span>
-                  </div>
-                  <div class="sec-top-point_point_case_slide_tags article-card_tags">
-                    <span class="sec-top-point_point_case_slide_tag_plan article-card_tag_plan">ベーシックプラン</span>
-                    <span class="sec-top-point_point_case_slide_tag_plan article-card_tag_cat">小売店</span>
-                  </div>
-                  <p class="sec-top-point_point_case_slide_ttl article-card_ttl">
-                    魚よし商店様
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li class="sec-top-point_point_case_slide_item swiper-slide article-card_item">
-              <a href="/regix/case/kitatoda_alps_hifuka/">
-                <img src="/files/user/regix/img/img-case-02.png" alt="北戸田アルプス皮フ科様" class="sec-top-point_point_case_slide_img" loading="lazy" style="aspect-ratio: 741 / 390;">
-                <div class="sec-top-point_point_case_slide_txt article-card_txt">
-                  <div class="sec-top-point_point_case_slide_info article-card_info">
-                    <span class="sec-top-point_point_case_slide_date article-card_date">2024.3.29</span>
-                    <span class="sec-top-point_point_case_slide_location article-card_location">埼玉県</span>
-                  </div>
-                  <div class="sec-top-point_point_case_slide_tags article-card_tags">
-                    <span class="sec-top-point_point_case_slide_tag_plan article-card_tag_plan">ベーシックプラン</span>
-                    <span class="sec-top-point_point_case_slide_tag_plan article-card_tag_cat">クリニック</span>
-                  </div>
-                  <p class="sec-top-point_point_case_slide_ttl article-card_ttl">
-                    北戸田アルプス皮フ科様
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li class="sec-top-point_point_case_slide_item swiper-slide article-card_item">
-              <a href="/regix/case/cocotier_clinic/">
-                <img src="/files/user/regix/img/img-case-03.png" alt="ココティエクリニック皮フ科・歯科口腔外科 様" class="sec-top-point_point_case_slide_img" loading="lazy" style="aspect-ratio: 741 / 390;">
-                <div class="sec-top-point_point_case_slide_txt article-card_txt">
-                  <div class="sec-top-point_point_case_slide_info article-card_info">
-                    <span class="sec-top-point_point_case_slide_date article-card_date">2022.11.21</span>
-                    <span class="sec-top-point_point_case_slide_location article-card_location">東京都</span>
-                  </div>
-                  <div class="sec-top-point_point_case_slide_tags article-card_tags">
-                    <span class="sec-top-point_point_case_slide_tag_plan article-card_tag_plan">ライトプラン</span>
-                    <span class="sec-top-point_point_case_slide_tag_plan article-card_tag_cat">クリニック</span>
-                  </div>
-                  <p class="sec-top-point_point_case_slide_ttl article-card_ttl">
-                    ココティエクリニック皮フ科・歯科口腔外科 様
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li class="sec-top-point_point_case_slide_item swiper-slide article-card_item">
-              <a href="/regix/case/usami_ganka/">
-                <img src="/files/user/regix/img/img-case-04.png" alt="医療法人社団宇佐美　宇佐美眼科様" class="sec-top-point_point_case_slide_img" loading="lazy" style="aspect-ratio: 741 / 390;">
-                <div class="sec-top-point_point_case_slide_txt article-card_txt">
-                  <div class="sec-top-point_point_case_slide_info article-card_info">
-                    <span class="sec-top-point_point_case_slide_date article-card_date">2022.8.25</span>
-                    <span class="sec-top-point_point_case_slide_location article-card_location">静岡県</span>
-                  </div>
-                  <div class="sec-top-point_point_case_slide_tags article-card_tags">
-                    <span class="sec-top-point_point_case_slide_tag_plan article-card_tag_plan">ライトプラン</span>
-                    <span class="sec-top-point_point_case_slide_tag_plan article-card_tag_cat">クリニック</span>
-                  </div>
-                  <p class="sec-top-point_point_case_slide_ttl article-card_ttl">
-                    医療法人社団宇佐美　宇佐美眼科様
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li class="sec-top-point_point_case_slide_item swiper-slide article-card_item">
-              <a href="/regix/case/tanzan_jinja/">
-                <img src="/files/user/regix/img/img-case-05.png" alt="多武峰　談山神社様" class="sec-top-point_point_case_slide_img" loading="lazy" style="aspect-ratio: 741 / 390;">
-                <div class="sec-top-point_point_case_slide_txt article-card_txt">
-                  <div class="sec-top-point_point_case_slide_info article-card_info">
-                    <span class="sec-top-point_point_case_slide_date article-card_date">2022.7.6</span>
-                    <span class="sec-top-point_point_case_slide_location article-card_location">奈良県</span>
-                  </div>
-                  <div class="sec-top-point_point_case_slide_tags article-card_tags">
-                    <span class="sec-top-point_point_case_slide_tag_plan article-card_tag_plan">ライトプラン</span>
-                    <span class="sec-top-point_point_case_slide_tag_plan article-card_tag_cat">レジャー・観光</span>
-                  </div>
-                  <p class="sec-top-point_point_case_slide_ttl article-card_ttl">
-                    多武峰　談山神社様
-                  </p>
-                </div>
-              </a>
-            </li>
-          </ul>
+            </div>
+          </div>
+          <div class="sec-top-point_point_case_slide_btn-wrap">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
         </div>
       </div>
     </section>
@@ -567,12 +480,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="sec-plan-function_list_wrap js-scrollable">
           <h3 class="sec-plan-function_list_ttl">サポート</h3>
           <ul class="sec-plan-function_list">
-            <li><div class="sec-plan-function_list_hd">スタート時</div></li>
+            <li>
+              <div class="sec-plan-function_list_hd">スタート時</div>
+            </li>
             <li><a href="" class="js-modal-open" data-modal-trigger="modal-fnc-3-1"><img src="/files/user/regix/img/product-function-icon-03-01.png" alt="初期設定" loading="lazy" style="aspect-ratio: 353 / 341;"></a></li>
             <li><a href="" class="js-modal-open" data-modal-trigger="modal-fnc-3-2"><img src="/files/user/regix/img/product-function-icon-03-02.png" alt="機器設置" loading="lazy" style="aspect-ratio: 353 / 341;"></a></li>
             <li><a href="" class="js-modal-open" data-modal-trigger="modal-fnc-3-3"><img src="/files/user/regix/img/product-function-icon-03-03.png" alt="取扱説明" loading="lazy" style="aspect-ratio: 353 / 341;"></a></li>
             <li class="dummy"> </li>
-            <li><div class="sec-plan-function_list_hd">ご利用中</div></li>
+            <li>
+              <div class="sec-plan-function_list_hd">ご利用中</div>
+            </li>
             <li><a href="" class="js-modal-open" data-modal-trigger="modal-fnc-3-4"><img src="/files/user/regix/img/product-function-icon-03-04.png" alt="コールセンターサポート" loading="lazy" style="aspect-ratio: 353 / 341;"></a></li>
             <li><a href="" class="js-modal-open" data-modal-trigger="modal-fnc-3-5"><img src="/files/user/regix/img/product-function-icon-03-05.png" alt="つり銭機定期点検（年1回）" loading="lazy" style="aspect-ratio: 353 / 341;"></a></li>
             <li><a href="" class="js-modal-open" data-modal-trigger="modal-fnc-3-6"><img src="/files/user/regix/img/product-function-icon-03-06.png" alt="出張保守サポート" loading="lazy" style="aspect-ratio: 353 / 341;"></a></li>
@@ -580,7 +497,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </ul>
         </div>
       </div>
-      
+
     </section>
 
     <section class="sec-plan-option basic container">
@@ -735,10 +652,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <div class="cv-area container">
       <div class="cv-area_inner">
-        <a href="https://form.glory.co.jp/webapp/form/20383_zdeb_68/index.do" target="_blank"
-          class="cv-area_btn_01 btn-round_blue">お問い合わせ・<br class="sp">資料請求</a>
-        <a href="https://form.glory.co.jp/webapp/form/20383_zdeb_69/index.do" target="_blank"
-          class="cv-area_btn_02 btn-round_green"><span>ご利用には審査が必要です</span><strong>無料Web審査お申し込み</strong></a>
+        <a href="https://form.glory.co.jp/webapp/form/20383_zdeb_68/index.do" target="_blank" class="cv-area_btn_01 btn-round_blue">お問い合わせ・<br class="sp">資料請求</a>
+        <a href="https://form.glory.co.jp/webapp/form/20383_zdeb_69/index.do" target="_blank" class="cv-area_btn_02 btn-round_green"><span>ご利用には審査が必要です</span><strong>無料Web審査お申し込み</strong></a>
       </div>
     </div>
 
@@ -847,10 +762,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </div>
               </div>
               <div class="sec-top-product_detail_plan_function_img-wrap">
-                <img src="/files/user/regix/img/top-plan-basic-functoin-img-01.png" alt="ベーシックプランの独自機能1"
-                  class="sec-top-product_detail_plan_function_img" loading="lazy" style="aspect-ratio: 595 / 379;">
-                <img src="/files/user/regix/img/top-plan-basic-functoin-img-02.png" alt="ベーシックプランの独自機能2"
-                  class="sec-top-product_detail_plan_function_img" loading="lazy" style="aspect-ratio: 454 / 379;">
+                <img src="/files/user/regix/img/top-plan-basic-functoin-img-01.png" alt="ベーシックプランの独自機能1" class="sec-top-product_detail_plan_function_img" loading="lazy" style="aspect-ratio: 595 / 379;">
+                <img src="/files/user/regix/img/top-plan-basic-functoin-img-02.png" alt="ベーシックプランの独自機能2" class="sec-top-product_detail_plan_function_img" loading="lazy" style="aspect-ratio: 454 / 379;">
               </div>
             </div>
           </div>
@@ -960,10 +873,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </div>
               </div>
               <div class="sec-top-product_detail_plan_function_img-wrap">
-                <img src="/files/user/regix/img/top-plan-light-functoin-img-01.png" alt="両プラン共通の機能1"
-                  class="sec-top-product_detail_plan_function_img" loading="lazy" style="aspect-ratio: 553 / 379;">
-                <img src="/files/user/regix/img/top-plan-light-functoin-img-02.png" alt="両プラン共通の機能2"
-                  class="sec-top-product_detail_plan_function_img" loading="lazy" style="aspect-ratio: 587 / 379;">
+                <img src="/files/user/regix/img/top-plan-light-functoin-img-01.png" alt="両プラン共通の機能1" class="sec-top-product_detail_plan_function_img" loading="lazy" style="aspect-ratio: 553 / 379;">
+                <img src="/files/user/regix/img/top-plan-light-functoin-img-02.png" alt="両プラン共通の機能2" class="sec-top-product_detail_plan_function_img" loading="lazy" style="aspect-ratio: 587 / 379;">
               </div>
             </div>
           </div>
@@ -1204,13 +1115,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </tr>
                 <tr>
                   <th>ページ名称設定</th>
-                  <td>商品設定ができる画面については最大40ページ登録ができます。<br>それぞれのページ名称を指定の名称に設定が可能です。</td>    
+                  <td>商品設定ができる画面については最大40ページ登録ができます。<br>それぞれのページ名称を指定の名称に設定が可能です。</td>
                   <th>会計集計見出設定</th>
                   <td>集計表の見出しの設定ができます。</td>
                 </tr>
                 <tr>
                   <th>特殊バーコード設定</th>
-                  <td>JANコード以外のバーコードについても読取りができるようバーコード内容の登録を行うことができます。</td>    
+                  <td>JANコード以外のバーコードについても読取りができるようバーコード内容の登録を行うことができます。</td>
                   <th>マスタ反映</th>
                   <td>外部CSVより各マスタを取込むことができます。</td>
                 </tr>
@@ -1643,15 +1554,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   <div class="bg-fix bg-top-case"><img src="/files/user/regix/img/bg-top-point-case.png" alt="導入事例背景画像" loading="lazy" style="aspect-ratio: 2880 / 1928;"></div>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script> 
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/scroll-hint@latest/css/scroll-hint.css">
-<script src="https://unpkg.com/scroll-hint@latest/js/scroll-hint.min.js"></script>
-<script type="text/javascript" src="/files/user/regix/js/script.js"></script>
+  <script src="https://unpkg.com/scroll-hint@latest/js/scroll-hint.min.js"></script>
+  <script type="text/javascript" src="/files/user/regix/js/script.js"></script>
 </body>
 
 </html>
-

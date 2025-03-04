@@ -2,27 +2,26 @@
 @use "common" as c;
 @use "top" as t;
 
-
 ///////////////////////////////////////////////////////////////////
-/// 
-/// 
+///
+///
 /// プラン別カラー
-/// 
+///
 ///
 .basic {
   --plan-color: #{c.$color-plan-b};
   --plan-color-invert: #{c.$color-white};
 }
 .light {
-  --plan-color: #15BF93;
+  --plan-color: #15bf93;
   --plan-color-invert: #{c.$color-black};
 }
 
 ///////////////////////////////////////////////////////////////////
-/// 
-/// 
+///
+///
 /// Plan MV
-/// 
+///
 ///
 .sec-plan-mv {
   position: relative;
@@ -82,10 +81,10 @@
   &_txt {
     @include l.sp(768) {
       width: 85%;
-    } 
+    }
     @include l.sp() {
       width: 100%;
-    }    
+    }
     @include l.pc() {
       // width: l.minvw(480);
       flex-shrink: 1;
@@ -141,12 +140,12 @@
         @include l.pc() {
           padding: 1em;
         }
-        span { 
-          @include l.remrp(18, 14); 
+        span {
+          @include l.remrp(18, 14);
           font-weight: 500;
         }
         strong {
-          @include l.remrp(24, 16); 
+          @include l.remrp(24, 16);
           font-weight: bold;
         }
       }
@@ -161,21 +160,21 @@
         margin-inline: auto;
       }
       span {
-        // @include l.remrp(24, 18); 
+        // @include l.remrp(24, 18);
         @include l.sp() {
-          font-size: l.rem(18)
+          font-size: l.rem(18);
         }
         @include l.pc(1024) {
-          font-size: l.rem(24)
+          font-size: l.rem(24);
         }
       }
       strong {
         @include l.remrp(64, 32);
         @include l.sp() {
-          font-size: l.rem(32)
+          font-size: l.rem(32);
         }
         @include l.pc(1024) {
-          font-size: l.rem(64)
+          font-size: l.rem(64);
         }
         color: var(--plan-color);
       }
@@ -206,18 +205,23 @@
       }
       @include l.pc() {
         padding-block: l.minvw(10);
-      } 
+      }
     }
     &_area {
       position: relative;
-      background: rgb(1,107,134);
-      background: linear-gradient(180deg, rgba(1,107,134,1) 0%, rgba(27,69,99,1) 100%);
+      background: rgb(1, 107, 134);
+      background: linear-gradient(
+        180deg,
+        rgba(1, 107, 134, 1) 0%,
+        rgba(27, 69, 99, 1) 100%
+      );
       border-radius: 10px;
       border: solid 5px #1b4563;
       @include l.sp() {
         width: 100%;
       }
-      .swiper-button-next, .swiper-button-prev {
+      .swiper-button-next,
+      .swiper-button-prev {
         position: unset;
         margin: 0;
       }
@@ -267,7 +271,7 @@
             position: absolute;
             left: 0;
             top: 0;
-            background-color: rgba($color: #000000, $alpha: .5);
+            background-color: rgba($color: #000000, $alpha: 0.5);
           }
         }
       }
@@ -276,10 +280,10 @@
 }
 
 ///////////////////////////////////////////////////////////////////
-/// 
-/// 
+///
+///
 /// 特長
-/// 
+///
 ///
 .sec-plan-feature {
   background-color: #fff;
@@ -338,7 +342,7 @@
           width: l.minvw(150);
         }
         @include l.pc() {
-          margin-bottom: .2em;
+          margin-bottom: 0.2em;
           width: 150px;
         }
       }
@@ -365,7 +369,7 @@
       padding-bottom: 100px;
     }
   }
-  &_item {      
+  &_item {
     display: grid;
     grid-template-columns: 58% 1fr;
     align-items: center;
@@ -388,7 +392,7 @@
         padding: 0.5em 1.2em;
         border-radius: 0.25em;
         margin-bottom: 1em;
-        
+
         span {
           @include l.remrp(16, 14);
         }
@@ -435,7 +439,6 @@
           margin: unset;
         }
       }
-
     }
   }
   &_item + &_item {
@@ -453,7 +456,7 @@
     @include l.pc() {
       padding-block: 50px;
     }
-    background-color: #EFF4F7;
+    background-color: #eff4f7;
     &_inner {
       background-color: c.$color-white;
       border-radius: 10px;
@@ -470,7 +473,7 @@
       @include l.pc() {
         display: grid;
         grid-template-columns: 1fr 217px;
-        gap: l.minvw(20); 
+        gap: l.minvw(20);
         padding: 30px 50px;
       }
     }
@@ -479,7 +482,9 @@
         line-height: 1.4;
         font-weight: bold;
         @include l.remrp(30, 22);
-        strong { color: c.$color-green; }
+        strong {
+          color: c.$color-green;
+        }
       }
       &_p {
         line-height: 1.7;
@@ -546,9 +551,9 @@
     .hd-underline_ttl {
       --font-color-hd: var(--plan-color);
     }
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
     @include l.sp() {
-      margin-top: l.minvw(60);;
+      margin-top: l.minvw(60);
       padding-block: l.minvw(60);
     }
     @include l.pc() {
@@ -569,10 +574,10 @@
 }
 
 ///////////////////////////////////////////////////////////////////
-/// 
-/// 
+///
+///
 /// 機能一覧
-/// 
+///
 ///
 .sec-plan-function {
   background-color: c.$color-white;
@@ -610,12 +615,12 @@
     a {
       display: block;
       position: relative;
-      transition: all .3s ease-out;
+      transition: all 0.3s ease-out;
       @include l.pc() {
         &:hover {
           opacity: 0.7;
         }
-      }      
+      }
       &::after {
         content: "";
         display: block;
@@ -645,9 +650,9 @@
       //   align-self: self-start;
       // }
       // @include l.pc(1024) {
-      //   align-self: center;  
+      //   align-self: center;
       // }
-      align-self: center;  
+      align-self: center;
     }
     li {
       @include l.sp(1024) {
@@ -664,7 +669,7 @@
     // }
     &_wrap {
       position: relative;
-      background-color: #F2F2F2;
+      background-color: #f2f2f2;
       border-radius: 10px;
       overflow: hidden;
       @include l.sp(1024) {
@@ -675,7 +680,7 @@
       @include l.pc(1024) {
         margin-top: 40px;
         padding: 100px 40px;
-      }      
+      }
     }
     &_ttl {
       @include l.remrp(24, 16);
@@ -697,21 +702,19 @@
       justify-content: center;
       align-items: center;
       padding: 1em;
-      @include l.remrp(18, 14)
+      @include l.remrp(18, 14);
     }
   }
 }
 
-
-
 ///////////////////////////////////////////////////////////////////
-/// 
-/// 
+///
+///
 /// option
-/// 
+///
 ///
 .sec-plan-option {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   @include l.sp() {
     padding-block: l.minvw(60);
   }
@@ -728,13 +731,11 @@
   }
 }
 
-
-
 ///////////////////////////////////////////////////////////////////
-/// 
-/// 
+///
+///
 /// Detail
-///  
+///
 ///
 .sec-plan-detail {
   background-color: c.$color-white;
@@ -749,17 +750,16 @@
       line-height: 1.7;
     }
     small {
-      @include l.remrp(14, 12)
+      @include l.remrp(14, 12);
     }
   }
 }
 
-
 ///////////////////////////////////////////////////////////////////
-/// 
-/// 
+///
+///
 /// Detail
-///  
+///
 ///
 .sec-plan-comparison {
   &_ttl {
@@ -769,17 +769,16 @@
       }
       @include l.pc() {
         padding-block: 64px 44px;
-      }      
+      }
     }
   }
 }
 
-
 ///////////////////////////////////////////////////////////////////
-/// 
-/// 
+///
+///
 /// Modal
-///  
+///
 ///
 .modal-function {
   .modal_header_hd {
@@ -805,41 +804,33 @@
     &_wrap {
       // overflow: scroll;
     }
-    border-top: 1px solid #D9D9D9;
-    border-left: 1px solid #D9D9D9;
-    
+    border-top: 1px solid #d9d9d9;
+    border-left: 1px solid #d9d9d9;
+
     @include l.sp() {
       grid-template-columns: 40% 60%;
     }
     @include l.pc() {
       grid-template-columns: 15% 35% 15% 35%;
     }
-    td, th {
+    td,
+    th {
       display: flex;
       align-items: center;
       padding: 0.5em;
       line-height: 1.5;
       @include l.remrp(14, 12);
-      border-right: 1px solid #D9D9D9;
-      border-bottom: 1px solid #D9D9D9;
+      border-right: 1px solid #d9d9d9;
+      border-bottom: 1px solid #d9d9d9;
     }
     th {
       text-align: left;
-      background-color: #F2F2F2;
+      background-color: #f2f2f2;
     }
   }
 }
 
-
-
-
-
-
-
-
 @include l.sp() {
-
 }
 @include l.pc() {
-
 }
