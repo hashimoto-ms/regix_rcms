@@ -1,0 +1,142 @@
+@use "lib/lib" as l;
+@use "common" as c;
+
+$color-gray: #F9F9F9;
+
+.sec-support {
+  &_hd3 {
+    color: c.$color-green;
+    line-height: 1.4;
+    @include l.remrp(40, 24);
+    @include l.sp() {
+      margin-bottom: l.minvw(30);
+    }
+    @include l.pc() {
+      margin-bottom: 30px;
+    }
+  }
+  &_hd4 {
+    color: c.$color-green;
+    font-weight: bold;
+    line-height: 1.4;
+    position: relative;
+    padding-left: 1em;
+    @include l.remrp(32, 20);
+    @include l.sp() {
+      margin-bottom: l.minvw(30);
+    }
+    @include l.pc() {
+      margin-bottom: 30px;
+    }
+    &::before {
+      content: "";
+      display: block;
+      height: 100%;
+      width: 5px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-color: c.$color-green;
+    }
+    small {
+      @include l.remrp(24, 12);
+    }
+  }
+  &_p {
+    line-height: 1.8;
+    @include l.remrp(16, 14);
+    small {
+      @include l.remrp(13, 11);
+    }
+  }
+  &_mv {
+    background-color: $color-gray;
+    @include l.sp() {
+      display: flex;
+      flex-direction: column;
+      min-height: l.minvw(250);
+    }
+    @include l.pc() {
+      z-index: -1;
+      position: relative;
+      height: 430px;
+    }
+    &_txt {
+      @include l.sp() {
+        padding-block: l.minvw(50);
+      }
+      @include l.pc() {
+        padding-block: 80px;
+      }
+      &_p {
+        line-height: 1.8;
+        @include l.remrp(18, 16);
+        br {
+          @include l.sp() {
+            display: none;
+          }
+        }
+      }
+    }
+
+    &_img {
+      height: 100%;
+      object-fit: cover;
+      @include l.pc() {
+        z-index: -1;
+        position: absolute;
+        right: 0;
+        top: 0;
+        max-width: 40vw;
+      }
+    }
+  }
+
+  &_list {
+    @include l.sp() {
+      padding-block: l.minvw(60);
+    }
+    @include l.pc() {
+      padding-block: 100px;
+    }
+    &_item {
+      display: flex;
+      border-radius: 10px;
+      box-shadow: 4px 4px 4px rgba($color: #000, $alpha: .25);
+      background-color: $color-gray;
+      @include l.sp(768) {
+        flex-direction: column;
+        padding: l.minvw(24);
+      }
+      @include l.pc(769) {
+        padding: 50px 100px;
+      }
+      &:not(:last-child) {
+        @include l.sp() {
+          margin-bottom: l.minvw(50);
+        }
+        @include l.pc() {
+          margin-bottom: 50px;
+        }
+      }
+      &_img {
+        @include l.sp(768) {
+          margin-inline: auto;
+          margin-top: l.minvw(24);
+          width: 25%;
+        }
+        @include l.sp() {
+          width: 50%;
+        }
+        @include l.pc(769) {
+          margin-left: 80px;
+        }
+      }
+    }
+  }
+}
+
+
+@include l.sp() {}
+
+@include l.pc() {}

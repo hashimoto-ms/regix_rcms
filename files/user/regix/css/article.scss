@@ -1,0 +1,84 @@
+@use "lib/lib" as l;
+@use "common" as c;
+
+.sec-case-archive,
+.sec-column-archive {
+  @include l.sp() {
+    padding-block: l.minvw(60);
+  }
+
+  @include l.pc() {
+    padding-block: 100px;
+  }
+
+  .container {
+    overflow: visible;
+  }
+}
+
+.article-single_section_table_wrapper {
+  display: flex;
+  @include l.sp() {
+    gap: l.minvw(5);
+    flex-direction: column;
+  }
+  @include l.pc() {
+    gap: 5px;
+  }
+
+  .article-single_section_table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    &:last-child {
+      height: fit-content;
+    }
+    th,
+    td {
+      border: 1px solid #cccccc;
+      line-height: 1.5;
+      @include l.sp() {
+        padding: l.minvw(10);
+      }
+      @include l.pc() {
+        padding: 10px;
+      }
+    }
+    .article-single_section_table_td_color {
+      color: #f0536f;
+    }
+    thead {
+      background-color: c.$color-blue;
+      td {
+        width: 20%;
+      }
+      th {
+        width: 40%;
+      }
+    }
+
+    tbody {
+      tr {
+        .article-single_section_table_th {
+          background-color: #e9f8f7;
+        }
+      }
+    }
+  }
+}
+
+.img-full {
+  &+* {
+    @include l.sp() {
+      margin-top: l.minvw(50);
+    }
+
+    @include l.pc() {
+      margin-top: 50px;
+    }
+    
+  }
+}
+
+@include l.sp() {}
+
+@include l.pc() {}

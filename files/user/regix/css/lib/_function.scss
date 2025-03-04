@@ -1,0 +1,106 @@
+@use "variable" as v;
+
+///////////////////////////////////////////////////////////////////
+/// 
+/// 
+/// Unit Change
+/// 
+///
+@function pxvw($px) {
+  @return calc((#{$px} / var(--content-width)) * 100vw);
+}
+@function minvw($px) {
+  @return min(pxvw($px), calc(#{$px} * 1px) );
+}
+@function maxvw($px) {
+  @return max(pxvw($px), calc(#{$px} * 1px) );
+}
+
+///////////////////////////////////////////////////////////////////
+/// 
+/// 
+/// Container Query
+/// 
+/// 
+@mixin cmax($name:var(--cname), $bp) {
+  @container #{$name} (width < #{$bp}px) { 
+    @content;
+  }
+}
+@mixin cmin($name:var(--cname), $bp) {
+  @container #{$name} (width > #{$bp}px) { 
+    @content;
+  }
+}
+
+///////////////////////////////////////////////////////////////////
+/// 
+/// 
+/// Transition
+/// 
+///
+@mixin hover-opacity() {
+  display: block;
+  transition: opacity .3s ease-out;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+@mixin hover-hue($base-color) {
+  transition: background-color .3s ease-out;
+  &:hover {
+    background-color: lighten($base-color, 10%);
+  }
+}
+
+@for $i from 1 through 30 {
+  .delay-#{$i} { transition-delay: #{$i / 10}s; }
+}
+@mixin fade-up() {
+  transition-duration: .5s;
+  transition-property: all;
+  transition-timing-function: ease-out;
+  opacity: 0;
+  transform: translateY(30px);
+  &.js-scrollin {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+///////////////////////////////////////////////////////////////////
+/// 
+/// 
+/// Font Size
+/// 
+///
+@function rem($px) {
+  @return calc((#{$px} / var(--em)) * 1rem);
+}
+
+@mixin remrp($pc, $sp, $bp:v.$default-bp) {
+  @media only screen and (max-width: #{$bp}px) {
+    font-size: calc((#{$sp} / var(--em)) * 1rem);
+  }
+  @media only screen and (min-width: #{$bp + 1}px) {
+    font-size: calc((#{$pc} / var(--em)) * 1rem);
+  }
+}
+
+///////////////////////////////////////////////////////////////////
+/// 
+/// 
+/// Background
+/// 
+///
+@mixin bg-contain($url) {
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@mixin bg-cover($url) {
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
